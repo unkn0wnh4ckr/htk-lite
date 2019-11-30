@@ -19,8 +19,8 @@ def install():
 	os.system("pip install requests[socks]")
 	os.system("pip install urlparse")
 	os.system("pip install cookielib") 
-	os.system("pip install scapy 
-	os.system("pip install datetime
+	os.system("pip install scapy")
+	os.system("pip install datetime")
 	os.system("pip install argparse") 
 	os.system("pip install re")
 	os.system("pip install threading") 
