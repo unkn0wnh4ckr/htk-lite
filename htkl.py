@@ -977,6 +977,8 @@ def monitoroff():
 	os.system("iwconfig")
 	i = raw_input("Select Interface: ")
 	os.system("airmon-ng stop " + i)
+	os.system("service network-manager restart")
+	os.system("service NetworkManager restart")
 
 def command():
 	command = raw_input("\033[1mCommand:\033[0m ")
