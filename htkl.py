@@ -971,6 +971,7 @@ def reboot():
 def monitoron():
 	os.system("iwconfig")
 	i = raw_input("Select Interface: ")
+	os.system("airmon-ng check kill")
 	os.system("airmon-ng start " + i)
 def monitoroff():
 	os.system("iwconfig")
